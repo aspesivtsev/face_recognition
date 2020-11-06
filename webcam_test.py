@@ -6,4 +6,4 @@ def testDevice(source):
        print('Warning: unable to open video source: ', source)
 
 testDevice(0) # no printout
-#testDevice(1) # prints message
+testDevice(1) # prints message
