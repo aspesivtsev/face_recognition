@@ -65,8 +65,9 @@ while True:
         y=face_location[1]
         w=face_location[2]
         h=face_location[3]
-        cv2.rectangle(frame,(y, x), (h, w), (randrange(256),randrange(256),randrange(256)), FRAME_THICKNESS)
-        #cv2.putText(frame,match(x, y), (x+w, y+h), (255,100,0), FRAME_THICKNESS)
+        col1, col2, col3 = randrange(256),randrange(256),randrange(256)
+        cv2.rectangle(frame,(y, x), (h, w), (col1,col2,col3), FRAME_THICKNESS)
+        cv2.putText(frame,match,(h, w+50), cv2.FONT_HERSHEY_SIMPLEX, 1, (col1,col2,col3))
 
 
             #(x, y, w, h) in face_coordinates:
