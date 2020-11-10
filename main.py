@@ -8,7 +8,7 @@ from random import randrange
 CWD = os.getcwd()
 KNOWN_FACES_DIR = os.path.join(CWD, 'known_faces')
 UNKNOWN_FACES_DIR = os.path.join(CWD, 'unknown_faces')
-TOLERANCE = 0.5
+TOLERANCE = 0.2
 FRAME_THICKNESS = 2
 MODEL = "hog" #cnn
 print(KNOWN_FACES_DIR)
